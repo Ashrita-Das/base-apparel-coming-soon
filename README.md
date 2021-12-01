@@ -1,4 +1,4 @@
-# Live site link: 
+# Live page link: 
 https://ashrita-das.github.io/base-apparel-coming-soon/
 
 # Frontend Mentor - Base Apparel coming soon page
