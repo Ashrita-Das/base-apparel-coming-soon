@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background: linear-gradient(135deg, white, #fff5f5);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .content {
+  width: 100%;
+}
+
+.container .content .logo {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .content .logo img {
+  margin-left: 30px;
+  width: 100px;
+}
+
+.container .content .mobile--cover {
+  display: block;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.container .desktop--cover {
+  display: none;
+}
+
+.info {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.info h1 span {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2.5rem;
+  letter-spacing: 0.5rem;
+  color: #413a3a;
+}
+
+.info h1 span:first-child {
+  color: #ce9797;
+  font-weight: 300;
+}
+
+.info p {
+  margin-top: 20px;
+  text-align: center;
+  color: #ce9797;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.subscribe {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40px;
+  border: 1px solid #ce9797;
+  border-radius: 40px;
+  -webkit-box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.subscribe input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding-left: 15px;
+  color: #ce9797;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.subscribe input:focus {
+  outline: none;
+}
+
+.subscribe input::-webkit-input-placeholder {
+  color: #ce9797;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.subscribe input:-ms-input-placeholder {
+  color: #ce9797;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.subscribe input::-ms-input-placeholder {
+  color: #ce9797;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.subscribe input::placeholder {
+  color: #ce9797;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.subscribe button {
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  border-radius: 40px;
+  border: none;
+  padding: 0 30px;
+}
+
+.subscribe button:hover {
+  outline: none;
+  background: linear-gradient(135deg, rgba(243, 107, 107, 0.8), rgba(226, 131, 131, 0.8));
+  cursor: pointer;
+}
+
+.subscribe.error {
+  border: 1px solid #f96262;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-right: none;
+}
+
+#email:focus {
+  outline: thin dotted #413a3a;
+}
+
+.error--icon {
+  display: none;
+}
+
+.error--icon.visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 10px;
+}
+
+.validation--message {
+  display: block;
+  padding-left: 30px;
+}
+
+@media only screen and (min-width: 961px) {
+  .container {
+    height: 100vh;
+  }
+  .container .content {
+    width: 60%;
+    padding: 3% 12%;
+  }
+  .container .content .logo img {
+    margin-left: 0;
+    width: 30%;
+  }
+  .container .content .mobile--cover {
+    display: none;
+  }
+  .container .desktop--cover {
+    display: block;
+    width: 40%;
+  }
+  .info {
+    margin-top: 80px;
+    width: 100%;
+    text-align: start;
+  }
+  .info h1 span {
+    font-size: 3rem;
+    letter-spacing: 0.75rem;
+  }
+  .info p {
+    font-size: 1.1rem;
+    line-height: 1.75rem;
+    text-align: left;
+  }
+  .subscribe {
+    margin-top: 40px;
+    height: 60px;
+  }
+  .subscribe input {
+    padding-left: 30px;
+    font-size: 18px;
+  }
+  .subscribe input::-webkit-input-placeholder {
+    font-size: 18px;
+  }
+  .subscribe input:-ms-input-placeholder {
+    font-size: 18px;
+  }
+  .subscribe input::-ms-input-placeholder {
+    font-size: 18px;
+  }
+  .subscribe input::placeholder {
+    font-size: 18px;
+  }
+  .subscribe button {
+    padding: 0 40px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
